@@ -1,4 +1,4 @@
-package com.example.chapter.one;
+package com.example.chapter.oldVariant;
 
 public interface Expression {
 	public Money reduce(Bank bank, String currency);

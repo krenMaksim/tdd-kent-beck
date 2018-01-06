@@ -1,4 +1,4 @@
-package com.example.chapter.one;
+package com.example.chapter.oldVariant;
 
 public class Money implements Expression {
 	public static Money dollar(int amount) {

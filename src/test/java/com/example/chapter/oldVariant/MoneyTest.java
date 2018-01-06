@@ -1,10 +1,15 @@
-package com.example.chapter.one;
+package com.example.chapter.oldVariant;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
+
+import com.example.chapter.oldVariant.Bank;
+import com.example.chapter.oldVariant.Expression;
+import com.example.chapter.oldVariant.Money;
+import com.example.chapter.oldVariant.Sum;
 
 public class MoneyTest {
 

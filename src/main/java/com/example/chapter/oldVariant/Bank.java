@@ -1,4 +1,4 @@
-package com.example.chapter.one;
+package com.example.chapter.oldVariant;
 
 import java.util.HashMap;
 import java.util.Map;
