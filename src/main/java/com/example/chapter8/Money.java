@@ -5,6 +5,10 @@ public abstract class Money {
 		return new Dollar(amount);
 	}
 
+	public static Franc franc(int amount) {
+		return new Franc(amount);
+	}
+
 	protected int amount;
 
 	@Override
