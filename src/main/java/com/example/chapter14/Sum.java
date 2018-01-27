@@ -9,6 +9,7 @@ public class Sum implements Expression {
 		this.addend = addend;
 	}
 
+	@Override
 	public Money reduce(Bank bank, String currency) {
 		int amount = augend.amount + addend.amount;
 		return new Money(amount, currency);
