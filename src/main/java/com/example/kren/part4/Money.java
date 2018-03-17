@@ -34,6 +34,11 @@ public class Money {
 		return newInstance(this.amount / convertedAmount(money));
 	}
 
+	public Money setTargetCurrency(Currency currency) {
+		double amount = currency.convert(this.currency, this.amount);
+		return new Money(amount, currency);
+	}
+
 	private Money newInstance(double amount) {
 		return new Money(amount, this.currency);
 	}
@@ -68,5 +73,4 @@ public class Money {
 			return false;
 		return true;
 	}
-
 }

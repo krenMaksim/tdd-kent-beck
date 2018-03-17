@@ -26,7 +26,7 @@ class MoneyTest {
 
 	@Test
 	void plus() {
-		Money sevenDollar = fiveDollar.plus(fourFranc).finalCurrency(FRANC);
+		Money sevenDollar = fiveDollar.plus(fourFranc);
 		assertEquals(new Money(7, DOLLAR), sevenDollar);
 	}
 
@@ -55,9 +55,14 @@ class MoneyTest {
 	}
 
 	@Test
+	void finalCurrency() {
+		Money forteenFranks = fiveDollar.plus(fourFranc).setTargetCurrency(FRANC);
+		assertEquals(new Money(14, FRANC), forteenFranks);
+	}
+
+	@Test
 	void equals() {
 		assertTrue(fiveDollar.equals(new Money(5, DOLLAR)));
 		assertFalse(fiveDollar.equals(threeDollar));
 	}
-
 }
