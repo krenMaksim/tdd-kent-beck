@@ -18,7 +18,7 @@ class MoneyTest {
     private static Money fourFranc = new Money(4, FRANC);
 
     @Test
-    void creatingObject() {
+    void initialStateWithIllegalArgument() {
 	assertThrows(IllegalArgumentException.class, () -> {
 	    new Money(-1, DOLLAR);
 	});
@@ -53,7 +53,7 @@ class MoneyTest {
     }
 
     @Test
-    void divideZero() {
+    void divideToZero() {
 	assertThrows(ArithmeticException.class, () -> {
 	    fiveDollar.divide(new Money(0, DOLLAR));
 	});
